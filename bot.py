@@ -5,7 +5,7 @@ import random
 # Initialize the bot with intents
 intents = discord.Intents.default()
 intents.message_content = True
-bot = commands.Bot(command_prefix='!', intents=intents)
+bot = commands.Bot(command_prefix='~', intents=intents)
 
 # Truth and Dare questions
 truths = [
@@ -39,7 +39,7 @@ async def dare(ctx):
     dare_question = random.choice(dares)
     await ctx.send(dare_question)
 
-@bot.command(name='truthordare')
+@bot.command(name='help')
 async def truth_or_dare(ctx):
     await ctx.send("Type 'truth' or 'dare' to receive a challenge!")
     def check(m):
@@ -51,7 +51,7 @@ async def truth_or_dare(ctx):
         elif msg.content.lower() == 'dare':
             await dare(ctx)
     except asyncio.TimeoutError: # type: ignore
-        await ctx.send("You took too long to respond! Please try again.")
+        await ctx.send("You took too long to respond! Please try again 😇.")
 
 # Error handling
 @bot.event
