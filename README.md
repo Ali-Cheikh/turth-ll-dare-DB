@@ -22,9 +22,9 @@ Radom Truth or Dare questions in tunisian
 - The command [prefix](#initialize-the-bot-with-intents) is **"~"**
 >
 > [!TIP]
->* To start a game, type **[~help](#bot-events-and-commands)** in a channel
->    Type **[~truth](#truths)** to receive a Truth question
->    Type **[~dare](#dares)** to receive a Dare question
+>* To start a game, type **[~help](#bot-events-and-commands)** in a channel<br>
+>    Type **[~truth](#truths)** to receive a Truth question<br>
+>    Type **[~dare](#dares)** to receive a Dare question<br>
 
 - Customization
     You can customize the Truth and Dare questions by modifying the truths and dares lists in the code.
