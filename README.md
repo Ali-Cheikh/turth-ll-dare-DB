@@ -20,8 +20,8 @@ Radom Truth or Dare questions in tunisian
 ## Usage
 
 - The command [prefix](#initialize-the-bot-with-intents) is **"~"**
-
->[!INFO]
+>
+> [!TIP]
 >* To start a game, type **[~help](#bot-events-and-commands)** in a channel
 >    Type **[~truth](#truths)** to receive a Truth question
 >    Type **[~dare](#dares)** to receive a Dare question
@@ -93,16 +93,20 @@ The bot includes basic error handling for common errors such as invalid commands
     else:
         await ctx.send("An error occurred. Please try again later.") print(error)
 ```
-
 ### Installation
->[!IMPORTANT]
+> [!IMPORTANT]
 > Install [Python](https://www.python.org)
 
 ### Required Packages
-
+>
+> [!WARNING]
+> #### Without the necessary packages and libraries nothing will work
 > Python libraries [pip/npm/etc]
->> pip install discord.py
->> pip install asyncio
+
+> [!CAUTION]
+> In your Teminal/Console
+> ```pip install discord.py```<br>
+> ```pip install asyncio ```
 
 ### Discord side
 
